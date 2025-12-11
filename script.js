@@ -168,3 +168,9 @@ document.querySelectorAll(growSelectors).forEach(el => {
     cursorGlow.style.background = "rgba(255,255,255,0.35)";
   });
 });
+// ---------- VIEW RESUME COMING SOON POPUP ----------
+document.getElementById("resumeBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+    alert("Resume Coming Soon!");
+});
+
