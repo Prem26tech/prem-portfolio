@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prem Wadekar — Portfolio</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("OFg38OefPaNeIrvL6");
+    })();
+  </script>
+
+</head>
+
+<body>
+
+  <!-- cursor glow element -->
+  <div id="cursorGlow"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="container header-inner">
+      <a class="logo" href="#home">Prem Wadekar</a>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-transition">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero container animate">
+      <div class="hero-left">
+        <p class="eyebrow">Hello — I'm</p>
+        <h1>Prem <span class="lastname">Wadekar</span></h1>
+        <p class="role">Computer Science Engineering Student · Web & App Developer</p>
+        <p class="lead">Passionate about problem-solving, technology, and creating digital experiences.</p>
+
+        <div class="hero-cta animate">
+          <a class="btn-resume" href="resume.pdf" target="_blank">
+            <i class="fa-solid fa-file-lines"></i> View Resume
+          </a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+
+        <ul class="meta-list animate">
+          <li><strong>Education:</strong> B.E. Computer Science — NMIT Bangalore (2028)</li>
+          <li><strong>Focus:</strong> Web Development · App Development</li>
+        </ul>
+      </div>
+
+      <aside class="hero-right animate">
+        <div class="portrait-wrap">
+          <img src="https://i.postimg.cc/YSCDGJvk/prempic4.jpg" class="portrait-img">
+          <div class="portrait-accent"></div>
+        </div>
+
+        <div class="hero-info-cards animate">
+          <div class="info-card">
+            <strong>Location</strong>
+            <span>Bangalore, Karnataka</span>
+          </div>
+
+          <div class="info-card">
+            <strong>Availability</strong>
+            <span>Open to internships & collaborations</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container animate">
+      <h2 class="section-title">About</h2>
+      <div class="grid">
+        <div class="card animate">
+          <h3>Bio</h3>
+          <p>I'm Prem Wadekar, currently pursuing a Bachelor of Engineering in Computer Science at NMIT Bangalore. I am passionate about technology, problem-solving, and building meaningful digital solutions.</p>
+        </div>
+
+        <div class="card animate">
+          <h3>Education & Experience</h3>
+          <ul>
+            <li><strong>B.E. CSE</strong> — NMIT Bangalore (2028)</li>
+            <li><strong>Volunteer — Robin Hood Army</strong></li>
+            <li><strong>Tech Club — Technical Team Member</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container animate">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid">
+
+        <div class="card animate">
+          <h4>Technical Skills</h4>
+          <div class="skill-tags">
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">App Dev</span>
+          </div>
+        </div>
+
+        <div class="card animate">
+          <h4>Soft Skills</h4>
+          <div class="skill-tags">
+            <span class="tag">Problem-solving</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Adaptability</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section container animate">
+      <h2 class="section-title">Services</h2>
+      <div class="grid">
+
+        <div class="card animate">
+          <h3>Web Development</h3>
+          <p>Modern, responsive and high-quality websites.</p>
+        </div>
+
+        <div class="card animate">
+          <h3>App Development</h3>
+          <p>Clean, intuitive and powerful applications.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container animate">
+      <h2 class="section-title">My Projects</h2>
+
+      <!-- SEARCH BAR -->
+      <div class="project-search animate">
+        <input type="text" id="projectSearch" placeholder="Search projects...">
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="project-filters animate">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="app">App Dev</button>
+        <button class="filter-btn" data-filter="other">Others</button>
+      </div>
+
+      <!-- PROJECT CARDS -->
+      <div class="project-grid" id="projectGrid">
+
+        <div class="project-card animate" data-type="web">
+          <div class="project-thumb"></div>
+          <h3 class="project-title">Project Template</h3>
+          <p class="project-desc">You can edit project details later…</p>
+
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+
+          <button class="project-btn view-details" data-project="1">View Details</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-content animate">
+        <span class="close-modal">&times;</span>
+        <h2 id="modalTitle">Project Title</h2>
+        <p id="modalDescription">Full description appears here…</p>
+        <a id="modalLink" href="#" target="_blank" class="btn btn-primary">View Project</a>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container animate">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="grid">
+
+        <div class="card animate">
+          <h3>Let's Connect</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> prem.wadekar2612@gmail.com</li>
+            <li><strong>Phone:</strong> 7795439918</li>
+            <li><strong>LinkedIn:</strong> prem-wadekar</li>
+            <li><strong>GitHub:</strong> Prem26tech</li>
+            <li><strong>Instagram:</strong> @premwadekar10</li>
+          </ul>
+        </div>
+
+        <div class="card animate">
+
+          <!-- FINAL EMAILJS CONTACT FORM -->
+          <form id="contactForm" class="contact-form">
+
+            <div class="input-group">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="from_name" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" name="from_email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group textarea">
+              <i class="fa-solid fa-message"></i>
+              <textarea name="message" placeholder="Write your message..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+            <p id="statusMsg"></p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Prem Wadekar</div>
+
+      <div class="socials">
+        <a href="https://github.com/Prem26tech"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/prem-wadekar-88051639b"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/premwadekar10"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
